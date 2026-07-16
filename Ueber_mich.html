@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bernard Turikumana – Über mich</title>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #1e2a3a;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem 2.8rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        nav {
+            display: flex;
+            gap: 1.8rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid #eef2f6;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #1e2a3a;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #2a7de1;
+        }
+
+        /* ---------- Überschriften ---------- */
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+            color: #0b1a2e;
+        }
+
+        .subhead {
+            color: #4a5a6e;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2.8rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 3px solid #eef2f6;
+            padding-bottom: 0.4rem;
+            color: #0b1a2e;
+        }
+
+        
+        figure {
+            display: flex;
+            align-items: center;
+            gap: 1.8rem;
+            flex-wrap: wrap;
+            background: #f8faff;
+            padding: 1.2rem 1.8rem;
+            border-radius: 16px;
+            margin-top: 0.5rem;
+        }
+
+        figure img {
+            border-radius: 50%;
+            border: 4px solid #2a7de1;
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #1e2a3a;
+        }
+
+        figcaption small {
+            display: block;
+            font-weight: 400;
+            color: #4a5a6e;
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        /* ---------- Tabelle ---------- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #dce3ec;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        thead {
+            background: #eef2f6;
+        }
+
+        th {
+            text-align: left;
+            padding: 12px 18px;
+            font-weight: 600;
+            color: #0b1a2e;
+        }
+
+        td {
+            padding: 10px 18px;
+            border-top: 1px solid #e6ecf3;
+        }
+
+       
+        form {
+            margin-top: 0.8rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.4rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .required {
+            color: #c03a3a;
+            font-weight: 700;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #d0d8e3;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: inherit;
+            background: #fafcff;
+            transition: 0.2s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #2a7de1;
+            outline: none;
+            background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(42, 125, 225, 0.08);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            margin: 0;
+        }
+
+        button {
+            background: #2a7de1;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.2s;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        button:hover {
+            background: #1b5fa8;
+            transform: scale(1.01);
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.2rem;
+            border-top: 2px solid #eef2f6;
+            font-size: 0.9rem;
+            color: #4a5a6e;
+            text-align: center;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            figure {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+       
+        <nav>
+            <a href="#profil">Profil</a>
+            <a href="#faehigkeiten">Fähigkeiten</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        
+        <h1>Über mich</h1>
+        <p class="subhead">Bernard Turikumana – Softwareentwickler · IT-Administrator · KI-Enthusiast</p>
+
+       
+        <section id="profil">
+            <figure>
+                <img
+                    src="bilder/foto.jpg"
+                    alt="Porträt von Bernard Turikumana – Softwareentwickler"
+                    width="140"
+                    height="140"
+                />
+                <figcaption>
+                    Bernard Turikumana
+                    <small>Softwareentwicklung · Datenbanken · Systemadministration</small>
+                </figcaption>
+            </figure>
+        </section>
+
+        
+        <section id="faehigkeiten">
+            <h2>Meine Fähigkeiten</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bereich</th>
+                        <th>Technologien</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programmierung</td>
+                        <td>Java, C#, Python, PHP</td>
+                    </tr>
+                    <tr>
+                        <td>Datenbanken</td>
+                        <td>MySQL, PostgreSQL, Oracle</td>
+                    </tr>
+                    <tr>
+                        <td>Betriebssysteme</td>
+                        <td>Windows, Linux</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+       
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+
+            <form action="/kontakt" method="post">
+
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required minlength="2" placeholder="z. B. Max Mustermann" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="max@beispiel.de" />
+                </div>
+
+                <div class="form-group">
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="0176 1234567" />
+                </div>
+
+                <div class="form-group">
+                    <label for="betreff">Betreff <span class="required">*</span></label>
+                    <select id="betreff" name="betreff" required>
+                        <option value="" disabled selected>— bitte wählen —</option>
+                        <option value="frage">Allgemeine Frage</option>
+                        <option value="angebot">Angebotsanfrage</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nachricht">Nachricht <span class="required">*</span></label>
+                    <textarea id="nachricht" name="nachricht" rows="6" required placeholder="Ihre Nachricht an mich..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="datenschutz" name="datenschutz" required />
+                    <label for="datenschutz" style="font-weight:400; margin:0;">
+                        Ich habe die Datenschutzerklärung gelesen und stimme zu. <span class="required">*</span>
+                    </label>
+                </div>
+
+                <button type="submit">Nachricht absenden</button>
+
+            </form>
+        </section>
+
+        
+        <footer>
+            &copy; 2026 Bernard Turikumana – <a href="https://github.com/mutabazi105" target="_blank">GitHub</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>

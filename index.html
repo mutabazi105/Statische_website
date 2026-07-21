@@ -24,29 +24,38 @@
         }
 
         /* ============================================================ */
-        /* HEADER & NAVIGATION                                          */
+        /* HEADER & NAVIGATION (Centered Stack)                         */
         /* ============================================================ */
         header {
             background-color: #1a1a2e;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             margin-bottom: 20px;
             border-radius: 8px;
+            
+            /* Stacks everything vertically and centers it horizontally */
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center;
+            gap: 20px;
         }
 
-        header h1 {
+        .header-content h1 {
             font-size: 2rem;
         }
 
-        header p {
+        .header-content p {
             color: #b0c4de;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
-            margin-top: 10px;
+            flex-direction: column; /* Aligns navigation links vertically (1 under 2 under 3) */
+            align-items: center;    /* Centers the links themselves */
+            gap: 10px;              /* Spacing between vertical items */
+            padding-left: 0;
         }
 
         nav a {
@@ -161,6 +170,46 @@
         }
 
         /* ============================================================ */
+        /* KARTEN-LAYOUT                                                */
+        /* ============================================================ */
+        .karten-container {
+            display: flex;
+            flex-wrap: wrap;   
+            gap: 1.5rem;       
+            margin-top: 15px;
+        }
+
+        .karte {
+            flex: 1 1 250px;   
+            display: flex;     
+            flex-direction: column; 
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .karte h3 {
+            margin-top: 0;
+            color: #1a1a2e;
+        }
+
+        .karte p {
+            flex-grow: 1;           
+        }
+
+        .karte a {
+            margin-top: auto;       
+            color: #2a7de1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .karte a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================================================ */
         /* FORM                                                         */
         /* ============================================================ */
         fieldset {
@@ -244,12 +293,7 @@
                 text-align: center;
             }
 
-            nav ul {
-                flex-direction: column;
-                gap: 5px;
-            }
-
-            header h1 {
+            .header-content h1 {
                 font-size: 1.6rem;
             }
         }
@@ -258,16 +302,19 @@
 <body>
 
     <!-- ============================================================ -->
-    <!-- HEADER & NAVIGATION                                          -->
+    <!-- HEADER & NAVIGATION (Centered & Stacked Vertically)           -->
     <!-- ============================================================ -->
     <header>
-        <h1>Bernard Turikumana</h1>
-        <p>Softwareentwickler &amp; IT-Administrator</p>
+        <div class="header-content">
+            <h1>Bernard Turikumana</h1>
+            <p>Softwareentwickler &amp; IT-Administrator</p>
+        </div>
 
         <nav>
             <ul>
                 <li><a href="#ueber-mich">Über mich</a></li>
                 <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+                <li><a href="#projekte">Projekte</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
@@ -365,6 +412,34 @@
                 </tr>
             </tfoot>
         </table>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PROJEKTE & KARTEN-LAYOUT                                     -->
+    <!-- ============================================================ -->
+    <section id="projekte">
+        <h2>Projekte &amp; Technologien</h2>
+        <p>Hier sind einige Schwerpunkte meiner bisherigen Arbeit und Weiterbildung:</p>
+
+        <div class="karten-container">
+            <article class="karte">
+                <h3>HTML</h3>
+                <p>Die Grundlage jeder Webseite. Ohne HTML gibt es keine Struktur und keine Inhalte.</p>
+                <a href="#">Mehr erfahren</a>
+            </article>
+
+            <article class="karte">
+                <h3>CSS &amp; Flexbox</h3>
+                <p>Zuständig für Aussehen, moderne Layouts, Ausrichtung und responsive Webseiten.</p>
+                <a href="#">Mehr erfahren</a>
+            </article>
+
+            <article class="karte">
+                <h3>JavaScript</h3>
+                <p>Interaktivität, Animationen und dynamische Inhalte – JavaScript macht Webseiten lebendig.</p>
+                <a href="#">Mehr erfahren</a>
+            </article>
+        </div>
     </section>
 
     <!-- ============================================================ -->

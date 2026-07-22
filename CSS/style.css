@@ -55,13 +55,13 @@
             font-weight: bold;
             padding: 8px 12px;
             border-radius: 4px;
-            transition: background-color 0.3s ease; /* smooth transition */
+            transition: background-color 0.3s ease; 
         }
 
-        /* Semi-transparent white/gray background on hover */
+        
         nav a:hover,
         nav a:focus {
-            background-color: rgba(255, 255, 255, 0.2); /* 20% transparent white */
+            background-color: rgba(255, 255, 255, 0.2); 
             color: white;
             text-decoration: none;
             outline: 2px solid #7c6e58;
@@ -134,7 +134,7 @@
             margin-bottom: 10px;
         }
 
-        /* Erstes li in jeder Liste */
+        
         li:first-child {
             font-weight: bold;
         }
@@ -177,7 +177,7 @@
             text-align: left;
         }
 
-        /* Jede zweite Zeile einer Tabelle (gerade) */
+        
         tr:nth-child(even) {
             background-color: #f8f7f4;
         }
@@ -228,9 +228,9 @@
             font-weight: bold;
         }
 
-        /* Maus-Hover und Tastaturfokus denselben Effekt geben */
+        
         .karte:hover,
-        .karte:focus-within { /* focus-within: ein Kind des Elements ist fokussiert */
+        .karte:focus-within {
             border-color: #7c6e58;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
@@ -268,7 +268,6 @@
             font-family: inherit;
         }
 
-        /* Tastaturfokus / Focus-Styles */
         input:focus,
         select:focus,
         textarea:focus {
@@ -276,14 +275,14 @@
             border-color: #7c6e58;
         }
 
-        /* Placeholder-Text in Eingabefeldern stylen */
+        
         input::placeholder,
         textarea::placeholder {
             color: #aaa;
             font-style: italic;
         }
 
-        /* Placeholder beim Tippen ausblenden */
+        
         input:focus::placeholder,
         textarea:focus::placeholder {
             color: transparent;
@@ -315,7 +314,7 @@
             outline-offset: 2px;
         }
 
-        /* Leichtes Eindrücken beim Klick */
+       
         button:active {
             background-color: #333;
             transform: scale(0.98);
@@ -348,8 +347,8 @@
 
         footer a:hover,
         footer a:focus {
-            background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
-            color: #ffffff;                              /* Changes text color to white for contrast */
+            background-color: rgba(255, 255, 255, 0.15); 
+            color: #ffffff;                              
             text-decoration: none;
             outline: 2px solid #7c6e58;
             outline-offset: 2px;

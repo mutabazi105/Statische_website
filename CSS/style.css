@@ -53,13 +53,17 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease; /* smooth transition */
         }
 
-        /* :hover und :focus kombinieren */
+        /* Semi-transparent white/gray background on hover */
         nav a:hover,
         nav a:focus {
-            color: #b0c4de;
-            text-decoration: underline;
+            background-color: rgba(255, 255, 255, 0.2); /* 20% transparent white */
+            color: white;
+            text-decoration: none;
             outline: 2px solid #7c6e58;
             outline-offset: 2px;
         }
@@ -337,16 +341,19 @@
         footer a {
             color: #2a7de1;
             text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         footer a:hover,
         footer a:focus {
-            color: #1a1a2e;
-            text-decoration: underline;
+            background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+            color: #ffffff;                              /* Changes text color to white for contrast */
+            text-decoration: none;
             outline: 2px solid #7c6e58;
             outline-offset: 2px;
         }
-
         /* ============================================================ */
         /* RESPONSIVE DESIGN                                            */
         /* ============================================================ */

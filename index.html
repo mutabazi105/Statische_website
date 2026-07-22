@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bernard Turikumana – Portfolio</title>
+    <meta name="description" content="Bernard Turikumana ist Softwareentwickler und IT-Administrator aus Hannover mit Schwerpunkt auf Java, C#, Python, KI und Data Science.">
 
     <link rel="stylesheet" href="CSS/style.css">
-
 </head>
 <body>
 
     <!-- ============================================================ -->
-    <!-- HEADER & NAVIGATION (Centered & Stacked Vertically)           -->
+    <!-- HEADER & NAVIGATION (Horizontal Layout: Inhalt links, Navigation rechts) -->
     <!-- ============================================================ -->
     <header>
         <div class="header-content">
@@ -19,7 +19,7 @@
             <p>Softwareentwickler &amp; IT-Administrator</p>
         </div>
 
-        <nav>
+        <nav aria-label="Hauptnavigation">
             <ul>
                 <li><a href="#ueber-mich">Über mich</a></li>
                 <li><a href="#faehigkeiten">Fähigkeiten</a></li>
@@ -32,8 +32,8 @@
     <!-- ============================================================ -->
     <!-- ÜBER MICH                                                     -->
     <!-- ============================================================ -->
-    <section id="ueber-mich">
-        <h2>Über mich</h2>
+    <section id="ueber-mich" aria-labelledby="h-ueber-mich">
+        <h2 id="h-ueber-mich">Über mich</h2>
 
         <figure>
             <img
@@ -56,7 +56,7 @@
         <ul>
             <li>Softwareentwicklung</li>
             <li>Künstliche Intelligenz</li>
-            <li>Chorgesang</li>
+            <li>Internet of Things (IoT)</li>
             <li>Freifunk Hannover</li>
             <li>Radfahren</li>
         </ul>
@@ -76,8 +76,8 @@
     <!-- ============================================================ -->
     <!-- FÄHIGKEITEN (TABELLE)                                        -->
     <!-- ============================================================ -->
-    <section id="faehigkeiten">
-        <h2>Fähigkeiten-Übersicht</h2>
+    <section id="faehigkeiten" aria-labelledby="h-faehigkeiten">
+        <h2 id="h-faehigkeiten">Fähigkeiten-Übersicht</h2>
 
         <table>
             <caption>Meine aktuellen Kenntnisse</caption>
@@ -117,7 +117,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="3">Stand: Juni 2026</td>
+                    <td colspan="3">Stand: <time datetime="2026-06">Juni 2026</time></td>
                 </tr>
             </tfoot>
         </table>
@@ -126,8 +126,8 @@
     <!-- ============================================================ -->
     <!-- PROJEKTE & KARTEN-LAYOUT                                     -->
     <!-- ============================================================ -->
-    <section id="projekte">
-        <h2>Projekte &amp; Technologien</h2>
+    <section id="projekte" aria-labelledby="h-projekte">
+        <h2 id="h-projekte">Projekte &amp; Technologien</h2>
         <p>Hier sind einige Schwerpunkte meiner bisherigen Arbeit und Weiterbildung:</p>
 
         <div class="karten-container">
@@ -144,8 +144,8 @@
             </article>
 
             <article class="karte">
-                <h3>JavaScript</h3>
-                <p>Interaktivität, Animationen und dynamische Inhalte – JavaScript macht Webseiten lebendig.</p>
+                <h3>Python &amp; KI</h3>
+                <p>Schwerpunkt meiner Weiterbildung an der Hochschule Hannover im Bereich Data Science.</p>
                 <a href="#">Mehr erfahren</a>
             </article>
         </div>
@@ -154,14 +154,14 @@
     <!-- ============================================================ -->
     <!-- KONTAKTFORMULAR                                               -->
     <!-- ============================================================ -->
-    <section id="kontakt">
-        <h2>Kontakt</h2>
+    <section id="kontakt" aria-labelledby="h-kontakt">
+        <h2 id="h-kontakt">Kontakt</h2>
 
         <p>
             <a href="mailto:mutabazi105@gmail.com">mutabazi105@gmail.com</a>
         </p>
 
-        <form action="/kontakt" method="post">
+        <form action="/kontakt" method="post" aria-label="Kontaktformular">
 
             <fieldset>
                 <legend>Kontaktdaten</legend>
@@ -200,7 +200,11 @@
     <!-- FOOTER                                                       -->
     <!-- ============================================================ -->
     <footer>
-        <p>&copy; 2026 Bernard Turikumana – <a href="https://github.com/mutabazi105" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <address>
+            Kontakt: <a href="mailto:mutabazi105@gmail.com">mutabazi105@gmail.com</a><br>
+            Hannover, Deutschland
+        </address>
+        <p>&copy; <time datetime="2026">2026</time> Bernard Turikumana – <a href="https://github.com/mutabazi105" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
 
 </body>
